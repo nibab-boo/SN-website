@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Projext - A
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav working">
+      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+      <div class="nav-container">
+        <a class="movement nav-link" href="#">About</a>
+        <a class="movement nav-link" href="#">Services</a>
+        <a class="movement nav-link " href="#">Clients</a>
+        <a class="movement nav-link" href="#">Contact</a>
+      </div>
+      <div class="main-image-box over-shadow">
+        <img class="main-image" src="images/test_image_1.jpg" alt="image_1">
+        <div class="image-over-shadow"></div>
+      </div>
+      <div class="info-container">
+
+      </div>
+
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+    <span id="open-close" onclick="openNav()">open</span>
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugit tenetur error, odio dolores iusto.
+      Perspiciatis et voluptatum sit non, nemo inventore assumenda
+      reiciendis nam consectetur ullam suscipit repellendus magnam?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consequatur!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dicta labore rerum delectus. Maxime commodi 
+      alias temporibus incidunt deserunt rerum dignissimos doloremque earum. 
+      Error fugiat corrupti explicabo minus vitae repudiandae!
+    </div>
+    
+    
+
+    <script>
+      /* Set the width of the side navigation to 250px */
+       const openNav = () => {
+        // document.getElementById("mySidenav").style.width = "100%";
+        // document.getElementById("mySidenav").style.transform = "rotate(360deg)";
+        document.getElementById("mySidenav").classList.toggle("working");
+
+        // adding class name to links
+        const movements = document.getElementsByClassName("movement");
+        for(let i = 0; i < movements.length; i++)
+        {
+          movements.item(i).classList.toggle("nav-link");
+        }
+        // close and open button with rotation
+        const openClose =document.getElementById("open-close");
+        if (openClose.innerHTML == "close") {
+          openClose.innerHTML = "open";
+          openClose.style.transform = "rotateX(360deg)";
+          
+        }
+        else {
+          openClose.innerHTML = "close";
+          openClose.style.transform = "rotateX(0)";   
+        }        
+
+        // image-overshadow width control
+        const imageOverShadow = document.querySelector('.image-over-shadow');
+        if (imageOverShadow.style.width === "100%") {
+          imageOverShadow.style.width = "0"
+        } else {
+          imageOverShadow.style.width = "100%"
+        }
+
+      }
+      
+      /* Close/hide the sidenav */
+      function closeNav() {
+        // document.getElementById("mySidenav").style.width = "0";
+        // document.getElementById("mySidenav").style.transform = "rotateX(360deg)";
+        
+        document.getElementById("mySidenav").classList.toggle("working");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
