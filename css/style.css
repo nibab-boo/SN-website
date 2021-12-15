@@ -9,7 +9,8 @@
   position: relative;
   top: 10px;
   left: 10px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: brown;
   display: inline-block;
   z-index: 1000;
