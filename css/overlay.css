@@ -1,7 +1,8 @@
 /* The side navigation menu */
 .sidenav {
+  box-sizing: border-box;
   height: 100%; /* 100% Full-height */
-  width: 100vw; /* 0 width - change this with JavaScript */
+  width: 100%; /* 0 width - change this with JavaScript */
   position: absolute; /* Stay in place */
   z-index: 100; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -10,8 +11,7 @@
   transform-origin: top left;
   transform: rotate(90deg);
   overflow: hidden;
-
-  padding:50px; /* Place content 60px from the top */
+   /* Place content 60px from the top */
   transition: transform 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -19,8 +19,9 @@
   display: flex;
   justify-content: space-between;
   background-color: antiquewhite;
-  height: 100%;
-  padding: 50px;
+  height: 60%;
+  padding: 100px;
+  margin: 40px;
   border-radius: 20px;
 }
 
@@ -65,18 +66,17 @@
   transition-delay: 1s;
 }
 
-
-
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
+  border-top: 0.5px solid antiquewhite;
+  border-bottom: 0.5px solid antiquewhite;
 }
 
 /* Position and style the close button (top right corner) */
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+/* #main {
   transition: margin-left .5s;
   padding: 20px;
 }
@@ -85,4 +85,4 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+} */
