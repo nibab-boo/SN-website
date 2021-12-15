@@ -2,13 +2,15 @@
 @import url("overlay.css");
 @import url("components/overlay_image.css");
 
+/* flip-card */
+@import url("components/flip_card.css");
+
 #open-close {
   position: relative;
   top: 10px;
   left: 10px;
+  font-size: 16px;
   color: brown;
   display: inline-block;
   z-index: 1000;
-  perspective: 1000px;
-  transition: transform 0.5s ease-in-out;
 }
