@@ -1,1 +1,12 @@
 @import url("overlay.css");
+
+#open-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color: brown;
+  display: inline-block;
+  z-index: 1000;
+  perspective: 1000px;
+  transition: transform 0.5s ease-in-out;
+}

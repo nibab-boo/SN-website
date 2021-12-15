@@ -12,20 +12,23 @@
   <body>
     <div id="mySidenav" class="sidenav working">
       <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <div class="nav-container">
-        <a class="movement nav-link" href="#">About</a>
-        <a class="movement nav-link" href="#">Services</a>
-        <a class="movement nav-link " href="#">Clients</a>
-        <a class="movement nav-link" href="#">Contact</a>
-      </div>
-      <div class="main-image-box over-shadow">
-        <img class="main-image" src="images/test_image_1.jpg" alt="image_1">
-        <div class="image-over-shadow"></div>
-      </div>
-      <div class="info-container">
+      <div id="sweet-border">
 
+        <div class="nav-container">
+          <a class="movement nav-link" href="#">About</a>
+          <a class="movement nav-link" href="#">Services</a>
+          <a class="movement nav-link " href="#">Clients</a>
+          <a class="movement nav-link" href="#">Contact</a>
+        </div>
+        <div class="main-image-box over-shadow">
+          <img class="main-image" src="images/test_image_1.jpg" alt="image_1">
+          <div class="image-over-shadow"></div>
+        </div>
+        <div class="info-container">
+          
+          
+        </div>
       </div>
-
     </div>
     
     <!-- Use any element to open the sidenav -->
@@ -47,8 +50,6 @@
     <script>
       /* Set the width of the side navigation to 250px */
        const openNav = () => {
-        // document.getElementById("mySidenav").style.width = "100%";
-        // document.getElementById("mySidenav").style.transform = "rotate(360deg)";
         document.getElementById("mySidenav").classList.toggle("working");
 
         // adding class name to links
@@ -78,14 +79,6 @@
         }
 
       }
-      
-      /* Close/hide the sidenav */
-      function closeNav() {
-        // document.getElementById("mySidenav").style.width = "0";
-        // document.getElementById("mySidenav").style.transform = "rotateX(360deg)";
-        
-        document.getElementById("mySidenav").classList.toggle("working");
-        }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
