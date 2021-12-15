@@ -1,4 +1,6 @@
+/* Main Overlay Things */
 @import url("overlay.css");
+@import url("components/overlay_image.css");
 
 #open-close {
   position: relative;

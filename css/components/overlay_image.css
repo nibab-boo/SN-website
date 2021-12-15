@@ -1,0 +1,26 @@
+
+.main-image-box {
+  position: relative;
+  margin-top: 80px;
+  height: 200px; 
+  width:400px; 
+}
+
+.image-over-shadow {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(108, 206, 165, 0.5);
+}
+
+.main-image {
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
+  box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
+}
