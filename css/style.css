@@ -4,6 +4,7 @@
 
 /* flip-card */
 @import url("components/flip_card.css");
+@import url("components/super_circle.css");
 
 #open-close {
   position: relative;

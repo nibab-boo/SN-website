@@ -1,9 +1,9 @@
 
 .main-image-box {
   position: relative;
-  margin-top: 80px;
-  height: 200px; 
-  width:400px; 
+  /* margin-top: 80px; */
+  height: 100%; 
+  width: 600px; 
 }
 
 .image-over-shadow {
@@ -20,7 +20,7 @@
   height: 100%; 
   width: 100%;
   object-fit: cover;
-  -webkit-box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
+  /* -webkit-box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
-  box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
+  box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75); */
 }
