@@ -1,9 +1,31 @@
 .super-circle {
   position: relative;
-  background-color: beige ;
+  /* left: 36px; */
+  /* width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../images/logo.png); */
+  transform-origin: 0 100px;
+  transform: rotateZ(-166deg);  
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+}
+
+.logo-movement {
+  position: relative;
+  left: 76px;
+  top: 70px;
+
 }
 
 span {
   display: inline-block;
   position: absolute;
+  transform-origin: 0 100px;
+  /* background-color: aqua; */
+  border-top: 2px solid black;
 }

@@ -1,6 +1,6 @@
 /* The side navigation menu */
 .sidenav {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   text-align: center;
   height: 100%; /* 100% Full-height */
   width: 100%; /* 0 width - change this with JavaScript */
@@ -19,6 +19,7 @@
 
 #sweet-border {
   display: flex;
+  box-sizing: border-box;
   justify-content: space-around;
   background-color: antiquewhite;
   height: 100%;
