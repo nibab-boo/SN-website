@@ -69,10 +69,16 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav .nav-link:hover {
   color: #f1f1f1;
   background-color: rgba(165, 42, 42, 0.8);
 }
+
+
+
+/* .icons li {
+  
+} */
 
 /* Position and style the close button (top right corner) */
 

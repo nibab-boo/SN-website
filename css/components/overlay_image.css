@@ -24,3 +24,63 @@
   -moz-box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75);
   box-shadow: 7px 10px 24px 0px rgba(0,0,0,0.75); */
 }
+
+/* Icons over image */
+.icons {
+  font-style: none;
+  position: absolute;
+  list-style: none;
+  font-size: 1.5em;
+  right: -0.5em;
+  bottom: 4em;
+}
+
+.icons li {
+  position: relative;
+  background-color: rgba(245, 245, 220, 0.5);
+  /* padding: 0.5em; */
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin: .8em 0;
+  opacity: 0;
+  animation: supermann .2s linear reverse;
+}
+
+.animate-supermann {
+  
+}
+
+/* Note:- Transition might help with bootstrap */
+
+.icons li:nth-child(1) {
+  animation-delay: .5s;
+}
+.icons li:nth-child(2) {
+  animation-delay: .6s;
+}
+.icons li:nth-child(3) {
+  animation-delay: .8s;
+}
+
+.icons li a:hover {
+  color: rgba(66, 66, 42, 0.61); 
+}
+
+@keyframes supermann {
+  0% {
+    right: -4em;
+  }
+  20% {
+    /* right: -2em; */
+    opacity: 0.5;
+  }
+  40% {
+    /* right: -2em; */
+    opacity: 1;
+  }
+  100% {
+    right: 0em;
+    opacity: 1;
+  }
+}
