@@ -31,12 +31,6 @@
 .working {
   transform: rotate(0);
 }
-
-.nav-container {
-  display: block;
-  margin-left: 200px;
-}
-
 .nav-container h6 {
   color: rgba(61, 59, 59, 0.9);
 }
@@ -92,4 +86,4 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-} */
+}

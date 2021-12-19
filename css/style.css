@@ -1,10 +1,16 @@
 /* Main Overlay Things */
 @import url("overlay.css");
 @import url("components/overlay_image.css");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 /* flip-card */
 @import url("components/flip_card.css");
 @import url("components/super_circle.css");
+
+.shadow-light {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+}
 
 #open-close {
   position: relative;
@@ -15,4 +21,5 @@
   color: brown;
   display: inline-block;
   z-index: 1000;
+  cursor:pointer;
 }

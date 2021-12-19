@@ -1,25 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.restaurant-box {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  margin-left: -100px;
+}
+
 .super-circle {
   position: relative;
-  /* left: 36px; */
-  /* width: 100px;
-  height: 100px;
+  background-image: url(../../images/logo.png);
+  margin: 0 auto;
+  width: 100px;
+  height: 180px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../images/logo.png); */
-  transform-origin: 0 100px;
-  transform: rotateZ(-166deg);  
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 8px;
+
 }
 
-.logo {
-  width: 55px;
-  height: 55px;
-}
-
-.logo-movement {
-  position: relative;
-  left: 76px;
-  top: 70px;
-
+.text {
+  position: absolute;
+  /* left: 36px; */
+  /* background-color: blue; */
+  /* transform-origin: 0 0; */
+  transform: rotateZ(-30deg);  
 }
 
 span {

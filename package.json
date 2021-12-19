@@ -1,10 +1,10 @@
 {
-  "name": "garage-livecode",
+  "name": "project-x",
   "version": "1.0.0",
-  "description": "Garage Livecode for the FullStack bootcamp",
-  "main": "index.js",
-  "repository": "https://github.com/lewagon/garage-livecode",
-  "author": "ssaunier",
+  "description": "Restaurant design",
+  "main": "app.js",
+  "repository": "https://github.con",
+  "author": "babin",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config webpack.config.js"
