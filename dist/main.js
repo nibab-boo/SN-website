@@ -104,15 +104,20 @@ var openClose = document.getElementById("open-close");
 var openNav = function openNav() {
   document.getElementById("mySidenav").classList.toggle("working"); // adding class name to links+++
 
-  var movements = document.querySelectorAll(".movement");
-  console.log(movements);
+  var movements = document.querySelectorAll(".movement"); // console.log(movements);
 
   for (var i = 0; i < movements.length; i++) {
     movements.item(i).classList.toggle("nav-link");
   } // close and open button with rotation
 
 
-  document.querySelector('.flip-card-inner').classList.toggle("flip-card-inner-clicked"); // image-overshadow width control
+  document.querySelector('.flip-card-inner').classList.toggle("flip-card-inner-clicked"); //toggling class on icons
+
+  var icons = document.querySelectorAll(".icons li");
+  icons.forEach(function (icon) {
+    icon.classList.toggle("x-move");
+  });
+  console.log(icons); // image-overshadow width control
 
   var imageOverShadow = document.querySelector('.image-over-shadow');
 
