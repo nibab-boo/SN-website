@@ -36,51 +36,32 @@
 }
 
 .icons li {
-  position: relative;
   background-color: rgba(245, 245, 220, 0.5);
-  /* padding: 0.5em; */
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
   margin: .8em 0;
+  transform: translateX(200px);
   opacity: 0;
-  animation: supermann .2s linear reverse;
+  transition: transform 0.8s ease-out,
+              opacity 0.8s linear;
 }
 
-.animate-supermann {
-  
+.icons .x-move {
+  transform: translateX(0);
+  opacity: 1;
 }
 
-/* Note:- Transition might help with bootstrap */
-
-.icons li:nth-child(1) {
-  animation-delay: .5s;
+.icons .x-move:nth-child(1) {
+  transition-delay: 1.5s;
 }
-.icons li:nth-child(2) {
-  animation-delay: .6s;
+.icons .x-move:nth-child(2) {
+  transition-delay: 2s;
 }
-.icons li:nth-child(3) {
-  animation-delay: .8s;
+.icons .x-move:nth-child(3) {
+  transition-delay: 2.2s;
 }
 
 .icons li a:hover {
   color: rgba(66, 66, 42, 0.61); 
-}
-
-@keyframes supermann {
-  0% {
-    right: -4em;
-  }
-  20% {
-    /* right: -2em; */
-    opacity: 0.5;
-  }
-  40% {
-    /* right: -2em; */
-    opacity: 1;
-  }
-  100% {
-    right: 0em;
-    opacity: 1;
-  }
 }
