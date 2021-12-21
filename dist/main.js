@@ -96,6 +96,9 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _super_circle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./super_circle */ "./lib/super_circle.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+ // import './../css/style.css
 
 /* Set the width of the side navigation to 250px */
 
@@ -116,22 +119,25 @@ var openNav = function openNav() {
   var icons = document.querySelectorAll(".icons li");
   icons.forEach(function (icon) {
     icon.classList.toggle("x-move");
-  });
-  console.log(icons); // image-overshadow width control
+  }); // image-overshadow width control
 
   var imageOverShadow = document.querySelector('.image-over-shadow');
+  console.log(_typeof(imageOverShadow.style.width));
 
-  if (imageOverShadow.style.width === "100%") {
-    imageOverShadow.style.width = "0";
-    imageOverShadow.style.transition = "width 0.6s 0.8s ease-in-out";
-  } else {
+  if (imageOverShadow.style.width == "0px") {
+    console.log(imageOverShadow.style.width);
     imageOverShadow.style.width = "100%";
     imageOverShadow.style.transition = "none";
+  } else {
+    console.log(imageOverShadow.style.width);
+    imageOverShadow.style.width = "0";
+    imageOverShadow.style.transition = "width 0.6s 0.8s ease-in-out";
   }
 };
 
-openClose.addEventListener("click", openNav);
-document.addEventListener("DOMContentLoaded", _super_circle__WEBPACK_IMPORTED_MODULE_0__["makingCircle"]);
+openClose.addEventListener("click", openNav); // document.addEventListener("DOMContentLoaded", makingCircle);
+
+Object(_super_circle__WEBPACK_IMPORTED_MODULE_0__["makingCircle"])();
 
 /***/ }),
 
