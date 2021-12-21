@@ -2,7 +2,9 @@
   position: relative;
   width: 200px;
   text-align: center;
-  margin-left: -100px;
+  padding-top: 24vh;
+  z-index: 1000;
+  /* background-color: burlywood; */
 }
 
 .super-circle {
@@ -15,7 +17,6 @@
   background-size: contain;
   background-position: center;
   margin-bottom: 8px;
-
 }
 
 .text {

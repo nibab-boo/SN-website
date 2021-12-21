@@ -20,7 +20,7 @@
 #sweet-border {
   display: flex;
   box-sizing: border-box;
-  justify-content: space-around;
+  justify-content: flex-end;
   background-color: rgb(250, 235, 215);
   height: 100%;
   padding: 100px;

@@ -1,11 +1,13 @@
 /* Main Overlay Things */
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url("overlay.css");
-@import url("components/overlay_image.css");
-
+@import url("overlay_image.css");
 /* flip-card */
-@import url("components/flip_card.css");
-@import url("components/super_circle.css");
+@import url("flip_card.css");
+/* super-circle */
+@import url("super_circle.css");
+/* components */
+@import url("components/container.css");
 
 .shadow-light {
   font-family: 'Shadows Into Light', cursive;
@@ -13,7 +15,7 @@
 }
 
 #open-close {
-  position: relative;
+  position: absolute;
   top: 10px;
   left: 10px;
   font-size: 20px;
@@ -22,4 +24,16 @@
   display: inline-block;
   z-index: 1000;
   cursor:pointer;
+  text-shadow: 1px 1px rgb(116, 100, 100);
+}
+
+#main {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(117, 19, 93, 0.4 )),
+    url("https://media.istockphoto.com/photos/wood-texture-table-top-with-blur-light-gold-bokeh-in-caferestaurant-picture-id1129661826?k=20&m=1129661826&s=170667a&w=0&h=AH4VbziLR5crmBEGYGY1FD5mCZFAvBLDs29c26tRYms=");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
