@@ -1,0 +1,18 @@
+.food-card {
+  width: 200px;
+  box-sizing: border-box;
+  background-color: rosybrown;
+  /* padding: 0; */
+  text-align: left;
+  /* margin-bottom: 0; */
+}
+
+.food-image {
+  width: 100%;
+  margin-bottom: 0;
+  /* padding: 2px; */
+}
+
+.mod-food-card {
+  margin: 0;
+}

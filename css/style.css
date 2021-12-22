@@ -4,11 +4,14 @@
 @import url("overlay_image.css");
 /* flip-card */
 @import url("flip_card.css");
+/* food.css */
+@import url("food.css");
 /* super-circle */
 @import url("super_circle.css");
 /* components */
 @import url("components/container.css");
 @import url("components/set_card.css");
+@import url("components/food_card.css");
 .shadow-light {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2em;

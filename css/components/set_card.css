@@ -1,6 +1,7 @@
 /* .sets {
 }  */
 .sets-section {
+  box-sizing: border-box;
   margin-top: 2em;
   padding: 2em 0 0;
   /* background-color: wheat; */
@@ -9,6 +10,7 @@
 }
 
 .menu-section {
+  box-sizing: border-box;
   font-size: 1.5em;
   text-align: center;
   margin: 0;
@@ -24,12 +26,17 @@
 }
 
 .set-card {
-  width: 100%;
   box-sizing: border-box;
+  margin: 0.8em 0.5em;
+  width: calc(100% - margin);
+  font-size: 1rem;
   padding: .2em 0.4em;
-  margin-top: 0;
-  margin-bottom: .2em;
+  /* margin-top: 0; */
   position: relative;
+}
+
+.set-card:hover {
+  transform: scale(1.008, 1.008);
 }
 
 .food-name {
