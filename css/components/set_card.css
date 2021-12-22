@@ -1,0 +1,52 @@
+/* .sets {
+}  */
+.sets-section {
+  margin-top: 2em;
+  padding: 2em 0 0;
+  /* background-color: wheat; */
+  margin-bottom: 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+}
+
+.menu-section {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1.5em;
+}
+
+.set-card:nth-child(odd) {
+  background-color: rgb(195, 228, 200);
+}
+
+.set-card:nth-child(even) {
+  background-color: rgba(195, 228, 200, 0.5);
+}
+
+.set-card {
+  width: 100%;
+  box-sizing: border-box;
+  padding: .2em 0.4em;
+  margin-top: 0;
+  margin-bottom: .2em;
+  position: relative;
+}
+
+.food-name {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.food-info {
+  font-weight: 500;
+  font-size: smaller;
+  margin-bottom: 0;
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* margin-bottom: 0.2em; */
+  margin-right: 1em;
+}

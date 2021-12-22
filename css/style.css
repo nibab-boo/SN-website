@@ -8,7 +8,7 @@
 @import url("super_circle.css");
 /* components */
 @import url("components/container.css");
-@import url("components/food_card.css");
+@import url("components/set_card.css");
 .shadow-light {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2em;
