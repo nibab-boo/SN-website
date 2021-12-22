@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
-.sweet-shadow {
+
+.hover-shadow {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  /* transition: transform 0.2s linear; */
+}
+
+.hover-shadow:hover {
+  transform: scale(1.008, 1.008);
 }
