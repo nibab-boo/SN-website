@@ -28,16 +28,16 @@
 .set-card {
   box-sizing: border-box;
   margin: 0.8em 0.5em;
-  width: calc(100% - margin);
   font-size: 1rem;
-  padding: .2em 0.4em;
+  padding: 0.2em 0.4em;
   /* margin-top: 0; */
   position: relative;
 }
 
 
 .food-name {
-  font-size: 1.2em;
+  /* display: inline-block; */
+  font-size: 1em;
   margin: 0;
 }
 
@@ -52,5 +52,6 @@
   bottom: 0;
   right: 0;
   /* margin-bottom: 0.2em; */
+  font-weight: bold;
   margin-right: 1em;
 }
