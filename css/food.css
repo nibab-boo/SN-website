@@ -15,3 +15,7 @@
 .hover-shadow:hover {
   transform: scale(1.008, 1.008);
 }
+
+.menu-item {
+  display: none;
+}

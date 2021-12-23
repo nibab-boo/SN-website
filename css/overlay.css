@@ -12,6 +12,7 @@
   transform-origin: top left;
   transform: rotate(90deg);
   overflow: hidden;
+  overflow-y: hidden;
   padding: 64px;
    /* Place content 60px from the top */
   transition: transform 0.5s; /* 0.5 second transition effect to slide in the sidenav */
