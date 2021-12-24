@@ -12,6 +12,7 @@
 @import url("components/container.css");
 @import url("components/set_card.css");
 @import url("components/food_card.css");
+@import url("menu.css");
 .shadow-light {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2em;
@@ -20,6 +21,7 @@
 body {
   overflow-x: hidden;
   margin: 0;
+  color: #4b3949;
 }
 
 .font-italic{

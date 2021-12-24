@@ -22,7 +22,8 @@
   display: flex;
   box-sizing: border-box;
   justify-content: flex-end;
-  background-color: rgb(250, 235, 215);
+  /* background-color: rgb(250, 235, 215); */
+  background-color: rgba(255, 214, 74, 1);
   height: 100%;
   padding: 100px;
   /* margin: 80px; */
@@ -42,7 +43,9 @@
   text-decoration: none;
   margin: 16px 0;
   font-size: 25px;
-  color: rgb(129, 129, 129);
+  padding: .5em;
+  color: #4b3949;
+  background-color: rgb(255, 255, 255, 0.3);
   display: block;
   transform: translateY(100px);
   opacity: 0;
@@ -70,8 +73,8 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav .nav-link:hover {
-  color: #f1f1f1;
-  background-color: rgba(165, 42, 42, 0.8);
+  /* color: #f1f1f1; */
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 

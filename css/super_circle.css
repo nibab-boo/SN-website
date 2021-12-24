@@ -42,10 +42,10 @@ span {
   text-decoration: none;
 }
 .restaurant-box .true-fact {
-  font-weight: 500;
-  color: rgb(255, 142, 0);
+  font-weight: bold;
+  color: rgb(255, 142, 1);
   /* text-shadow: 1px 1px 2px rgba(179, 166, 166, 0.6);*/
-  text-shadow: 1px 1px 2px rgba(0,0,0, 0.6);
+  text-shadow: 1px 1px 2px red;
 }
 
 .letter-s {
