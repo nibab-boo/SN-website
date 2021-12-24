@@ -14,7 +14,6 @@
   overflow: hidden;
   overflow-y: hidden;
   padding: 64px;
-   /* Place content 60px from the top */
   transition: transform 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -22,11 +21,9 @@
   display: flex;
   box-sizing: border-box;
   justify-content: flex-end;
-  /* background-color: rgb(250, 235, 215); */
   background-color: rgba(255, 214, 74, 1);
   height: 100%;
   padding: 100px;
-  /* margin: 80px; */
   border-radius: 20px;
 }
 
@@ -39,7 +36,6 @@
 
 /* The navigation menu links */
 .movement {
-  /* padding: 8px 8px 8px 32px; */
   text-decoration: none;
   margin: 16px 0;
   font-size: 25px;
@@ -73,22 +69,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav .nav-link:hover {
-  /* color: #f1f1f1; */
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-
-
-/* .icons li {
-  
-} */
-
-/* Position and style the close button (top right corner) */
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-/* #main {
-  transition: margin-left .5s;
-  padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

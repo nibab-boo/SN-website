@@ -1,18 +1,17 @@
-/* Main Overlay Things */
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@import url("overlay.css");
-@import url("overlay_image.css");
+/* Main Overlay Things */
+@import url("overlay/overlay.css");
+@import url("overlay/overlay_image.css");
 /* flip-card */
-@import url("flip_card.css");
+@import url("components/flip_card.css");
 /* food.css */
-@import url("food.css");
+@import url("menu/menu.css");
 /* super-circle */
 @import url("super_circle.css");
 /* components */
 @import url("components/container.css");
 @import url("components/set_card.css");
 @import url("components/food_card.css");
-@import url("menu.css");
 .shadow-light {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2em;
@@ -24,30 +23,11 @@ body {
   color: #4b3949;
 }
 
+a {
+  text-decoration: none;
+}
+
 .font-italic{
   font-style: italic;
 }
 
-#open-close {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: brown;
-  display: inline-block;
-  z-index: 1000;
-  cursor:pointer;
-  text-shadow: 1px 1px 2px rgba(116, 100, 100, 0.6);
-}
-
-#main {
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(117, 19, 93, 0.4 )),
-    url("https://media.istockphoto.com/photos/wood-texture-table-top-with-blur-light-gold-bokeh-in-caferestaurant-picture-id1129661826?k=20&m=1129661826&s=170667a&w=0&h=AH4VbziLR5crmBEGYGY1FD5mCZFAvBLDs29c26tRYms=");
-  background-repeat: no-repeat;
-  background-size: cover;
-}

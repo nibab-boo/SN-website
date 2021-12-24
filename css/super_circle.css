@@ -1,3 +1,14 @@
+#main {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(117, 19, 93, 0.4 )),
+    url("https://media.istockphoto.com/photos/wood-texture-table-top-with-blur-light-gold-bokeh-in-caferestaurant-picture-id1129661826?k=20&m=1129661826&s=170667a&w=0&h=AH4VbziLR5crmBEGYGY1FD5mCZFAvBLDs29c26tRYms=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .restaurant-box {
   position: relative;
   width: 200px;
@@ -22,25 +33,17 @@
 .text {
   position: absolute;
   color: rgb(255, 23, 0);
-  /* left: 36px; */
-  /* background-color: blue; */
-  /* transform-origin: 0 0; */
   transform: rotateZ(-30deg);  
 }
 
-span {
+.super-circle span {
   display: inline-block;
   position: absolute;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0,0,0, 0.3);
   transform-origin: 0 100px;
-  /* background-color: aqua; */
-  /* border-top: 2px solid black; */
 }
 
-.restaurant-box a {
-  text-decoration: none;
-}
 .restaurant-box .true-fact {
   font-weight: bold;
   color: rgb(255, 142, 1);

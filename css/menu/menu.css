@@ -1,0 +1,39 @@
+.menu {
+  padding: 3em 0 2em;
+  background-color: rgba(255, 214, 74, 1);
+}
+
+/* .menu-item {
+  display: none;
+} */
+
+.sets-section {
+  box-sizing: border-box;
+  padding: 2em 0 0.8em;
+  margin-bottom: 2em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+}
+
+.menu-section {
+  box-sizing: border-box;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1.5em;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shadow-effect {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hover-effect:hover {
+  transform: scale(1.008, 1.008);
+}

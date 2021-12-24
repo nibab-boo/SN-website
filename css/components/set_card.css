@@ -1,19 +1,9 @@
-/* .sets {
-}  */
-.sets-section {
+.set-card {
   box-sizing: border-box;
-  padding: 2em 0 0.8em;
-  /* background-color: wheat; */
-  margin-bottom: 2em;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-}
-
-.menu-section {
-  box-sizing: border-box;
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 1.5em;
+  margin: 0.8em 0.5em;
+  font-size: 1rem;
+  padding: 0.2em 0.4em;
+  position: relative;
 }
 
 .set-card:nth-child(odd) {
@@ -24,18 +14,7 @@
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.set-card {
-  box-sizing: border-box;
-  margin: 0.8em 0.5em;
-  font-size: 1rem;
-  padding: 0.2em 0.4em;
-  /* margin-top: 0; */
-  position: relative;
-}
-
-
 .food-name {
-  /* display: inline-block; */
   font-size: 1em;
   margin: 0;
 }
