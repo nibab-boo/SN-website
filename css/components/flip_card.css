@@ -44,10 +44,6 @@
   width: 100%;
 }
 
-/* .flip-card-front {
-  background-color: wheat;
-} */
-
 .flip-card-back {
   transform: rotateX(180deg);
 }
