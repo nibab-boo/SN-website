@@ -13,8 +13,9 @@
   position: relative;
   width: 200px;
   text-align: center;
-  padding-top: 22vh;
+  padding-top: 16vh;
   z-index: 1000;
+  margin-left: -100px;
   /* background-color: burlywood; */
 }
 
