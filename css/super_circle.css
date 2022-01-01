@@ -15,7 +15,7 @@
   text-align: center;
   padding-top: 16vh;
   z-index: 1000;
-  margin-left: -100px;
+  /* margin-left: -100px; */
   /* background-color: burlywood; */
 }
 
@@ -80,5 +80,11 @@
 
   40%, 60% {
     transform: translate3d(4px, 4px, 0);
+  }
+}
+
+@media (max-width: 1360px) {
+  .restaurant-box {
+    margin-left: -80px;
   }
 }

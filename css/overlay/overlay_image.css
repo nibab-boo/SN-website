@@ -65,3 +65,9 @@
 .icons li a:hover {
   color: rgba(66, 66, 42, 0.61); 
 }
+
+@media (max-width: 1280px) {
+  .main-image-box {
+    width: 500px;
+  }
+}
