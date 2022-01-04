@@ -7,14 +7,17 @@
     url("https://media.istockphoto.com/photos/wood-texture-table-top-with-blur-light-gold-bokeh-in-caferestaurant-picture-id1129661826?k=20&m=1129661826&s=170667a&w=0&h=AH4VbziLR5crmBEGYGY1FD5mCZFAvBLDs29c26tRYms=");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .restaurant-box {
   position: relative;
   width: 200px;
   text-align: center;
-  padding-top: 16vh;
+  padding: 16vh 8px 0;
   z-index: 1000;
+  background-color: rgba(255, 0, 0, 0.4);
+  height: 100vh;
   /* margin-left: -100px; */
   /* background-color: burlywood; */
 }
