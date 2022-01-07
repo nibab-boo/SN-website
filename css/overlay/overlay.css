@@ -1,4 +1,6 @@
 /* The side navigation menu */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .sidenav {
   box-sizing: border-box;
   text-align: center;
@@ -39,7 +41,9 @@
 .movement {
   text-decoration: none;
   margin: 16px 0;
-  /* font-size: 25px; */
+  font-family: 'Lobster', sans-serif;;
+  /* font-family: 'Open Sans', 'Helvetica Neue', sans-serif; */
+  cursor: pointer;
   font-size: 1.5em;
   padding: .5em;
   color: #4b3949;
