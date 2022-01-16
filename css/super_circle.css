@@ -14,9 +14,8 @@
   position: relative;
   width: 200px;
   text-align: center;
-  padding: calc(16vh - 100px) 8px 0;
   z-index: 1000;
-  background-color: rgba(255, 0, 0, 0.4);
+  /* background-color: rgba(255, 0, 0, 0.4); */
   height: calc(100vh - 200px);
   margin-top: 100px;
   /* margin-left: -100px; */
@@ -87,8 +86,31 @@
   }
 }
 
+@media (min-width: 1360px) {
+  .restaurant-box {
+    margin-left: -100px;
+  }
+}
 @media (max-width: 1360px) {
   .restaurant-box {
-    margin-left: -80px;
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 1044px) {
+  .restaurant-box {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .restaurant-box {
+    margin: 16px auto 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .restaurant-box > p {
+    display: none;
   }
 }
