@@ -4,7 +4,7 @@
   height: 100vh;
   margin: 0;
   background: linear-gradient(to bottom, rgba(97, 192, 221, .2), rgba(126, 194, 240, 0.3)),
-    url("https://media.istockphoto.com/photos/wood-texture-table-top-with-blur-light-gold-bokeh-in-caferestaurant-picture-id1129661826?k=20&m=1129661826&s=170667a&w=0&h=AH4VbziLR5crmBEGYGY1FD5mCZFAvBLDs29c26tRYms=");
+    url("./../images/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
