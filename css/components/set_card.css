@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0.8em 0.5em;
   font-size: 1rem;
-  padding: 0.2em 0.4em;
+  padding: 0.2em 0.4em 20px;
   position: relative;
 }
 
@@ -20,8 +20,6 @@
 }
 
 .food-info {
-  font-weight: 500;
-  font-size: smaller;
   margin-bottom: 0;
 }
 

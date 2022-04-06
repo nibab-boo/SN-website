@@ -1,6 +1,5 @@
 .food-card {
   width: 200px;
-  background-color: white;
   text-align: left;
 }
 
@@ -13,5 +12,7 @@
 .mod-food-card {
   display: inline-block;
   margin: 0px;
-  background-color: inherit;
+  width: 100%;
+  min-height: 120px;
+  background-color: transparent;
 }
