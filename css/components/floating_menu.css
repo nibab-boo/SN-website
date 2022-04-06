@@ -1,0 +1,72 @@
+.floating-menu {
+  position: fixed;
+  bottom: 60px;
+  right: 24px;
+  width: 40px;
+  height: 16px;
+}
+
+.floating-menu:before, .floating-menu:after {
+  content: "";
+  position: absolute;
+  /* margin: 8px 0; */
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  transition: all .6s;
+  height: 6px;
+  transform-origin: top left;
+}
+.floating-menu:after {
+  transform-origin: bottom left;
+  top: 24px;
+}
+.floating-menu.clicked:before {
+  transform: rotate(40deg);
+}
+.floating-menu.clicked:after {
+  transform: rotate(-40deg);
+}
+
+.floating-menu ul {
+  position: absolute;
+  background-color: red;
+  bottom: 0;
+  right: 0;
+  transition: all 1.2s;
+  list-style: none;
+  opacity: 0;
+}
+
+.floating-menu ul li {
+  position: absolute;
+  background-color: lightcyan;
+  padding: 8px;
+  margin: 8px;
+  transition: all 2s;
+  border-radius: 50%;
+}
+.floating-menu.clicked ul li:nth-child(1) {
+  /* transform: rotate(360deg); */
+  transform: translate(-96px, -116px) rotate(327deg);
+}
+.floating-menu.clicked ul li:nth-child(2) {
+  /* transform: rotate(340deg); */
+  transform: translate(-150px, -80px) rotate(318deg);
+}
+.floating-menu.clicked ul li:nth-child(3) {
+  /* transform: rotate(320deg); */
+  transform: translate(-184px, -35px) rotate(312deg);
+}
+.floating-menu.clicked ul li:nth-child(4) {
+  /* transform: rotate(300deg); */
+  transform: translate(-211px, 11px) rotate(300deg);
+}
+.floating-menu.clicked ul {
+  /* display: inline-block; */
+  /* right: 140px;
+  bottom: 160px;
+  /* transition: left 2s; */
+  opacity: 1;
+}
