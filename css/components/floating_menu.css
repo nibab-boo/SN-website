@@ -1,0 +1,64 @@
+.floating-menu {
+  position: fixed;
+  bottom: 40px;
+  right: 24px;
+}
+
+.floating-menu:before, .floating-menu:after {
+  content: "";
+  position: absolute;
+  margin: 8px 0;
+  top: 0;
+  right: 0;
+  width: 40px;
+  background-color: white;
+  height: 6px;
+}
+.floating-menu:after {
+  top: 24px;
+}
+.floating-menu.clicked:before {
+  transform-origin: top left;
+  transform: rotate(40deg);
+}
+.floating-menu.clicked:after {
+  transform-origin: bottom left;
+  transform: rotate(-40deg);
+}
+
+.floating-menu ul {
+  position: absolute;
+  display: none;
+  background-color: red;
+
+  transition: left right 2s;
+  list-style: none;
+
+}
+
+.floating-menu ul li {
+  position: absolute;
+  transform: rotate(360deg);
+  background-color: lightcyan;
+  padding: 8px;
+  margin: 8px;
+  transition: all 2s;
+  border-radius: 50%;
+}
+.floating-menu ul li:nth-child(2) {
+  transform: rotate(340deg);
+}
+.floating-menu ul li:nth-child(3) {
+  transform: rotate(320deg);
+}
+.floating-menu ul li:nth-child(4) {
+  transform: rotate(300deg);
+}
+.floating-menu.clicked ul {
+  right: 140px;
+  bottom: 160px;
+  display: block;
+}
+.floating-menu.clicked ul li {
+  transform-origin: 60px 200px;
+}
