@@ -96,17 +96,24 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _super_circle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./super_circle */ "./lib/super_circle.js");
+/* harmony import */ var _floating_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./floating_menu */ "./lib/floating_menu.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
 
  // import './../css/style.css
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".floating-menu").addEventListener("click", function (e) {
+    this.classList.toggle("clicked");
+  });
+  Object(_floating_menu__WEBPACK_IMPORTED_MODULE_1__["floatingMenu"])();
+});
 /* Set the width of the side navigation to 250px */
 
 var openClose = document.getElementById("open-close");
 
 var openNav = function openNav() {
-  document.getElementById("mySidenav").classList.toggle("working"); // document.querySelector(".menu").display="none";
-
+  document.getElementById("mySidenav").classList.toggle("working");
   document.querySelector(".menu").style.display = "none";
   document.querySelectorAll(".menu-item").forEach(function (item) {
     item.style.display = "none";
@@ -158,9 +165,35 @@ document.querySelector(".nav-button").addEventListener("click", function (event)
 document.querySelector(".nav-button").addEventListener("mouseover", function (event) {
   document.querySelector(".main-image").src = event.target.dataset.url;
 });
-document.querySelector(".floating-menu").addEventListener("click", function (e) {
-  this.classList.toggle("clicked");
-});
+
+/***/ }),
+
+/***/ "./lib/floating_menu.js":
+/*!******************************!*\
+  !*** ./lib/floating_menu.js ***!
+  \******************************/
+/*! exports provided: floatingMenu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "floatingMenu", function() { return floatingMenu; });
+var floatingSlider = function floatingSlider(event) {
+  var menuItem = document.getElementById("".concat(event.target.dataset.id));
+  menuItem.parentElement.parentElement.style.display = "block";
+  menuItem.style.display = "block"; // setTimeout(() => {
+
+  menuItem.scrollIntoView({
+    behavior: 'smooth'
+  }); // }, 1000);
+};
+
+var floatingMenu = function floatingMenu() {
+  var menus = document.querySelectorAll(".floating-menu li");
+  menus.forEach(function (menuButton) {
+    menuButton.addEventListener("click", floatingSlider);
+  });
+};
 
 /***/ }),
 
@@ -176,8 +209,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makingCircle", function() { return makingCircle; });
 var makingCircle = function makingCircle() {
   var curvingThing = document.querySelector(".text");
-  curvingThing.innerHTML = curvingThing.textContent.replace(/(\w|\s)/g, "<span>$&</span>");
-  var allLetters = document.querySelectorAll("span");
+  curvingThing.innerHTML = curvingThing.textContent.replace(/(\w|\s)/g, "<span class='super-circle-letters'>$&</span>");
+  var allLetters = document.querySelectorAll(".super-circle-letters");
   console.log(allLetters);
 
   for (var i = 0; i < allLetters.length; i++) {
