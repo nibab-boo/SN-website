@@ -1,11 +1,13 @@
 .menu {
   padding: 3em 0 2em;
   background-color: rgba(255, 214, 74, 1);
-  display: none;
+  /* Bring back this two line back */
+  /* display: none; */
 }
 
 .menu-item {
-  display: none;
+  /* Bring back this two line back */
+  /* display: none; */
 }
 
 .sets-section {

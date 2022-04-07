@@ -27,6 +27,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: inherit;
+}
 
 .font-italic{
   font-style: italic;

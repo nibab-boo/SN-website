@@ -45,7 +45,7 @@
   transform: rotateZ(-30deg);  
 }
 
-.super-circle span {
+.super-circle .super-circle-letters {
   display: inline-block;
   position: absolute;
   font-weight: bold;

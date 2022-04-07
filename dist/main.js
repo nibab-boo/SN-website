@@ -158,6 +158,9 @@ document.querySelector(".nav-button").addEventListener("click", function (event)
 document.querySelector(".nav-button").addEventListener("mouseover", function (event) {
   document.querySelector(".main-image").src = event.target.dataset.url;
 });
+document.querySelector(".floating-menu").addEventListener("click", function (e) {
+  this.classList.toggle("clicked");
+});
 
 /***/ }),
 
