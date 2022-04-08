@@ -33,7 +33,7 @@
 
 .super-circle {
   position: relative;
-  background-image: url(../../images/logo.png);
+  background-image: url("./../images/logo.png");
   margin: 0 auto;
   z-index: 200;
   width: 100px;
